@@ -1,6 +1,6 @@
-import Packet from '../../Packet';
+import { Packet } from '../../Packet';
 
-export default class HandshakePacket extends Packet<Handshake> {
+export class HandshakePacket extends Packet<Handshake> {
   public static id = 0x00;
 
   public write(data?: Handshake): void {

@@ -1,6 +1,6 @@
-import Packet from '../../Packet';
+import { Packet } from '../../Packet';
 
-export default class PingResponsePacket extends Packet<PingResponse> {
+export class PingResponsePacket extends Packet<PingResponse> {
   public static id = 0x01;
 
   public write(data?: PingResponse): void {

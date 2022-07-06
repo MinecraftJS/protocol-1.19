@@ -1,7 +1,7 @@
 import { BufWrapper } from '@minecraft-js/bufwrapper';
 
 /** Class representing a packet */
-export default class Packet<T> {
+export class Packet<T> {
   /** ID of the packet */
   public static id: number;
 

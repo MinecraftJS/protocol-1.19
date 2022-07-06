@@ -1,6 +1,6 @@
-import Packet from '../../Packet';
+import { Packet } from '../../Packet';
 
-export default class StatusResponsePacket extends Packet<StatusResponse> {
+export class StatusResponsePacket extends Packet<StatusResponse> {
   public static id = 0x00;
 
   public write(data?: StatusResponse): void {
