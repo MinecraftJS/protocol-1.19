@@ -1,4 +1,4 @@
-import BufWrapper from '@minecraft-js/bufwrapper';
+import { BufWrapper } from '@minecraft-js/bufwrapper';
 
 /** Class representing a packet */
 export default class Packet<T> {
