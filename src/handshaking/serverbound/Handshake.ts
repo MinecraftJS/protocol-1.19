@@ -11,7 +11,7 @@ export default class HandshakePacket extends Packet<Handshake> {
 
     // @minecraft-js/BufWrapper doesn't support unsigned shorts
     let serverPortBuf = Buffer.alloc(2);
-    serverPortBuf.writeUInt8(data.serverPort);
+    serverPortBuf.writeUInt16BE(data.serverPort);
     this.buf.writeBytes(serverPortBuf);
 
     this.buf.writeVarInt(data.nextState);
@@ -21,7 +21,7 @@ export default class HandshakePacket extends Packet<Handshake> {
     this.data = {
       protocolVersion: this.buf.readVarInt(),
       serverAddress: this.buf.readString(),
-      serverPort: this.buf.readBytes(2).readUInt8(),
+      serverPort: this.buf.readBytes(2).readUInt16BE(),
       nextState: this.buf.readVarInt(),
     };
 
