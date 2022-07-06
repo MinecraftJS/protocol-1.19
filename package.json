@@ -1,7 +1,7 @@
 {
-  "name": "template",
+  "name": "@minecraft-js/protocol-1.19",
   "version": "1.0.0",
-  "description": "todo: change",
+  "description": "Minecraft 1.19 protocol (759)",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,19 +9,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MinecraftJS/template.git"
+    "url": "git+https://github.com/MinecraftJS/protocol-1.19.git"
   },
   "keywords": [
     "minecraftjs"
   ],
-  "author": "todo: change",
+  "author": "RichardDorian",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MinecraftJS/template/issues"
+    "url": "https://github.com/MinecraftJS/protocol-1.19/issues"
   },
-  "homepage": "https://github.com/MinecraftJS/template#readme",
+  "homepage": "https://github.com/MinecraftJS/protocol-1.19#readme",
   "devDependencies": {
+    "@types/node": "^18.0.3",
     "prettier": "^2.6.1",
     "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@minecraft-js/bufwrapper": "^1.3.0"
   }
 }
